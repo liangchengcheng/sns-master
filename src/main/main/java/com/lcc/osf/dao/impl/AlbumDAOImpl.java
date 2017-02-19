@@ -18,9 +18,8 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.awt.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -32,6 +31,7 @@ import java.util.List;
 /**
  * Created by lcc on 2017/2/19.
  */
+@Repository("albumDao")
 public class AlbumDAOImpl implements AlbumDAO {
     private static final String TABLE_ALBUM = "osf_albums";
     private static final String TABLE_PHOTO = "osf_photos";
