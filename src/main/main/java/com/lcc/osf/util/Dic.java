@@ -22,7 +22,7 @@ public class Dic {
     private int object_type_album = 2;
     private int object_type_following = 3;
     private int object_type_shortpost = 4;
-    
+
     private  int notify_type_system = 0;
     private  int notify_type_comment = 1;
     private  int notify_type_comment_reply = 2;

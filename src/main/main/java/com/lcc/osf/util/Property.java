@@ -9,7 +9,6 @@ import java.util.Properties;
  */
 public class Property {
 
-
     static {
         String classpath = Property.class.getClassLoader().getResource("").getPath();
         Properties prop = new Properties();
