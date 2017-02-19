@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import javax.imageio.ImageIO;
-import javax.management.relation.RelationService;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -31,7 +30,7 @@ public class AlbumService {
 
     public static final int ALBUM_STAUS_NORMAL = 0;
 
-    //待发布
+    /** 待发布 **/
     public static final int ALBUM_STAUS_TOBERELEASED = 1;
 
     public static String IMG_BASE_URL = Property.IMG_BASE_URL;
@@ -87,7 +86,6 @@ public class AlbumService {
             BufferedImage imgBuf = ImageIO.read(img.getInputStream());
             String classpath = AlbumService.class.getClassLoader().getResource("").getPath();
             ImageIO.write(imgBuf, getImgType(img), new File(classpath+"/tmp/"+key));
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -231,6 +229,7 @@ public class AlbumService {
         int user_id = albumDao.getAuthorOfAlbum(id);
         return userService.findById(user_id);
     }
+
     public User getAuthorOfPhoto(int id){
         Album album = albumDao.getAlbumContainPhoto(id);
         User user = new User();
