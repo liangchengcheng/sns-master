@@ -263,7 +263,6 @@ public class AlbumService {
             } else {
                 return key;
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
