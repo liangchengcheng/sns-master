@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6296d467-5b59-4c81-828f-cb55815994e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/InterestDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/LikeDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/NotificationDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/PostDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/TagDAOImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/UserDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java" />
     </list>
     <ignored path="sns-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,30 +29,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RelationDAOImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java">
+      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/UserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="1061">
+              <caret line="301" column="77" selection-start-line="301" selection-start-column="77" selection-end-line="301" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1383#1774#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-                <element signature="e#2382#2383#0" expanded="true" />
-                <element signature="e#2435#2436#0" expanded="true" />
-                <element signature="e#2502#2503#0" expanded="true" />
-                <element signature="e#2530#2531#0" expanded="true" />
-                <element signature="e#2708#2995#0" expanded="true" />
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#2997#3345#0" expanded="true" />
-                <element signature="e#3344#3345#0" expanded="true" />
-                <element signature="e#3554#3570#0" expanded="true" />
-                <element signature="e#3670#4186#0" expanded="true" />
-                <element signature="e#4185#4186#0" expanded="true" />
-                <marker date="1487600314000" expanded="true" signature="1226:1296" ph="insert into osf_relations... " />
-                <marker date="1487600314000" expanded="true" signature="1950:2020" ph="insert into osf_relations... " />
-                <marker date="1487600314000" expanded="true" signature="2611:2671" ph="select * fro... osf_relations" />
-                <marker date="1487600314000" expanded="true" signature="3447:3497" ph="select * fro... osf_relations" />
+                <element signature="e#2469#2801#0" expanded="true" />
+                <element signature="e#2800#2801#0" expanded="true" />
+                <element signature="e#3232#3865#0" expanded="true" />
+                <element signature="e#3864#3865#0" expanded="true" />
+                <element signature="e#4175#4191#0" expanded="true" />
+                <element signature="e#4287#5066#0" expanded="true" />
+                <element signature="e#5065#5066#0" expanded="true" />
+                <element signature="e#5240#5883#0" expanded="true" />
+                <element signature="e#5882#5883#0" expanded="true" />
+                <element signature="e#6176#7098#0" expanded="true" />
+                <element signature="e#7097#7098#0" expanded="true" />
+                <element signature="e#7482#8084#0" expanded="true" />
+                <element signature="e#8083#8084#0" expanded="true" />
+                <element signature="e#8356#8765#0" expanded="true" />
+                <element signature="e#8764#8765#0" expanded="true" />
+                <element signature="e#9164#9489#0" expanded="true" />
+                <element signature="e#9488#9489#0" expanded="true" />
+                <element signature="e#9716#10058#0" expanded="true" />
+                <element signature="e#10057#10058#0" expanded="true" />
+                <element signature="e#10288#10678#0" expanded="true" />
+                <element signature="e#10677#10678#0" expanded="true" />
+                <element signature="e#11153#11477#0" expanded="true" />
+                <element signature="e#11476#11477#0" expanded="true" />
+                <element signature="e#12085#12086#0" expanded="true" />
+                <element signature="e#12375#12720#0" expanded="true" />
+                <element signature="e#12719#12720#0" expanded="true" />
+                <marker date="1487638675000" expanded="true" signature="2353:2406" ph="select user_... osf_users" />
+                <marker date="1487638675000" expanded="true" signature="4073:4118" ph="select * fro... osf_users" />
+                <marker date="1487638675000" expanded="true" signature="5142:5177" ph="select * fro... osf_users" />
+                <marker date="1487638675000" expanded="true" signature="7197:7358" ph="insert into osf_users... " />
+                <marker date="1487638675000" expanded="true" signature="8227:8318" ph="update osf_u... " />
+                <marker date="1487638675000" expanded="true" signature="8833:8868" ph="delete from " />
+                <marker date="1487638675000" expanded="true" signature="9077:9133" ph="update osf_u... " />
+                <marker date="1487638675000" expanded="true" signature="9636:9685" ph="update osf_u... " />
+                <marker date="1487638675000" expanded="true" signature="10197:10257" ph="update osf_u... " />
+                <marker date="1487638675000" expanded="true" signature="11033:11090" ph="select reset... osf_users" />
+                <marker date="1487638675000" expanded="true" signature="11670:11728" ph="update osf_u... " />
+                <marker date="1487638675000" expanded="true" signature="12289:12344" ph="update osf_u... " />
               </folding>
             </state>
           </provider>
@@ -85,8 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/web/InitFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/web/LoginRequiredInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Photo.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Tag.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/User.java" />
@@ -118,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/LikeService.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/ShortPost.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/InterestService.java" />
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/TagService.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/ShortPostService.java" />
@@ -136,6 +153,9 @@
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/NotificationDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/PostDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/TagDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/UserDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -153,8 +173,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="673" />
-    <option name="y" value="36" />
+    <option name="x" value="544" />
+    <option name="y" value="22" />
     <option name="width" value="1146" />
     <option name="height" value="722" />
   </component>
@@ -635,15 +655,15 @@
       <option name="presentableId" value="Default" />
       <updated>1487413919180</updated>
       <workItem from="1487413921025" duration="26934000" />
-      <workItem from="1487594572115" duration="4349000" />
+      <workItem from="1487594572115" duration="8631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31283000" />
+    <option name="totallyTimeSpent" value="35565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="673" y="36" width="1146" height="722" extended-state="0" />
+    <frame x="544" y="22" width="1146" height="722" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -722,70 +742,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1102">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#1030#1031#0" expanded="false" />
-            <element signature="e#1055#1056#0" expanded="false" />
-            <element signature="e#1087#1088#0" expanded="false" />
-            <element signature="e#1115#1116#0" expanded="false" />
-            <element signature="e#1149#1150#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1397#1398#0" expanded="false" />
-            <element signature="e#1443#1444#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-            <element signature="e#1553#1554#0" expanded="false" />
-            <element signature="e#1595#1596#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-            <element signature="e#1667#1668#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
-            <element signature="e#1802#1803#0" expanded="false" />
-            <element signature="e#1833#1834#0" expanded="false" />
-            <element signature="e#1877#1878#0" expanded="false" />
-            <element signature="e#1917#1918#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#1982#1983#0" expanded="false" />
-            <element signature="e#2029#2030#0" expanded="false" />
-            <element signature="e#2071#2072#0" expanded="false" />
-            <element signature="e#2103#2104#0" expanded="false" />
-            <element signature="e#2128#2129#0" expanded="false" />
-            <element signature="e#2167#2168#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2235#2236#0" expanded="false" />
-            <element signature="e#2271#2272#0" expanded="false" />
-            <element signature="e#2329#2330#0" expanded="false" />
-            <element signature="e#2379#2380#0" expanded="false" />
-            <element signature="e#2421#2422#0" expanded="false" />
-            <element signature="e#2459#2460#0" expanded="false" />
-            <element signature="e#2521#2522#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2614#2615#0" expanded="false" />
-            <element signature="e#2649#2650#0" expanded="false" />
-            <element signature="e#2705#2706#0" expanded="false" />
-            <element signature="e#2753#2754#0" expanded="false" />
-            <element signature="e#2783#2784#0" expanded="false" />
-            <element signature="e#2812#2813#0" expanded="false" />
-            <element signature="e#2853#2854#0" expanded="false" />
-            <element signature="e#2889#2890#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Following.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Follower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-97">
@@ -897,6 +853,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -904,6 +861,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,27 +911,27 @@
         <state relative-caret-position="105">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
-            <element signature="e#2265#2804#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
-            <element signature="e#3241#3657#0" expanded="true" />
-            <element signature="e#3656#3657#0" expanded="true" />
-            <element signature="e#4178#4179#0" expanded="true" />
-            <element signature="e#4205#4206#0" expanded="true" />
-            <element signature="e#4585#4601#0" expanded="true" />
-            <element signature="e#5159#5455#0" expanded="true" />
-            <element signature="e#5454#5455#0" expanded="true" />
-            <element signature="e#7035#7329#0" expanded="true" />
-            <element signature="e#7328#7329#0" expanded="true" />
-            <element signature="e#7331#8009#0" expanded="true" />
-            <element signature="e#8008#8009#0" expanded="true" />
-            <element signature="e#8216#8837#0" expanded="true" />
-            <element signature="e#8836#8837#0" expanded="true" />
-            <element signature="e#9090#9588#0" expanded="true" />
-            <element signature="e#9587#9588#0" expanded="true" />
-            <element signature="e#9798#10118#0" expanded="true" />
-            <element signature="e#10117#10118#0" expanded="true" />
-            <element signature="e#10365#11171#0" expanded="true" />
-            <element signature="e#11170#11171#0" expanded="true" />
+            <element signature="e#2265#2804#0" expanded="false" />
+            <element signature="e#2803#2804#0" expanded="false" />
+            <element signature="e#3241#3657#0" expanded="false" />
+            <element signature="e#3656#3657#0" expanded="false" />
+            <element signature="e#4178#4179#0" expanded="false" />
+            <element signature="e#4205#4206#0" expanded="false" />
+            <element signature="e#4585#4601#0" expanded="false" />
+            <element signature="e#5159#5455#0" expanded="false" />
+            <element signature="e#5454#5455#0" expanded="false" />
+            <element signature="e#7035#7329#0" expanded="false" />
+            <element signature="e#7328#7329#0" expanded="false" />
+            <element signature="e#7331#8009#0" expanded="false" />
+            <element signature="e#8008#8009#0" expanded="false" />
+            <element signature="e#8216#8837#0" expanded="false" />
+            <element signature="e#8836#8837#0" expanded="false" />
+            <element signature="e#9090#9588#0" expanded="false" />
+            <element signature="e#9587#9588#0" expanded="false" />
+            <element signature="e#9798#10118#0" expanded="false" />
+            <element signature="e#10117#10118#0" expanded="false" />
+            <element signature="e#10365#11171#0" expanded="false" />
+            <element signature="e#11170#11171#0" expanded="false" />
             <marker date="1487482925000" expanded="true" signature="4265:4311" ph="select 'key'... osf_photos" />
             <marker date="1487482925000" expanded="true" signature="4477:4529" ph="select 'key'... osf_photos" />
             <marker date="1487482925000" expanded="true" signature="4788:4835" ph="select user_... osf_albums" />
@@ -996,22 +956,22 @@
         <state relative-caret-position="270">
           <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding>
-            <element signature="e#2549#2880#0" expanded="true" />
-            <element signature="e#2879#2880#0" expanded="true" />
-            <element signature="e#3125#3558#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3947#4155#0" expanded="true" />
-            <element signature="e#4154#4155#0" expanded="true" />
-            <element signature="e#4548#4786#0" expanded="true" />
-            <element signature="e#4785#4786#0" expanded="true" />
-            <element signature="e#5179#5417#0" expanded="true" />
-            <element signature="e#5416#5417#0" expanded="true" />
-            <element signature="e#5805#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="e#6610#7392#0" expanded="true" />
-            <element signature="e#7391#7392#0" expanded="true" />
-            <element signature="e#7816#7817#0" expanded="true" />
-            <element signature="e#7844#7845#0" expanded="true" />
+            <element signature="e#2549#2880#0" expanded="false" />
+            <element signature="e#2879#2880#0" expanded="false" />
+            <element signature="e#3125#3558#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3947#4155#0" expanded="false" />
+            <element signature="e#4154#4155#0" expanded="false" />
+            <element signature="e#4548#4786#0" expanded="false" />
+            <element signature="e#4785#4786#0" expanded="false" />
+            <element signature="e#5179#5417#0" expanded="false" />
+            <element signature="e#5416#5417#0" expanded="false" />
+            <element signature="e#5805#6043#0" expanded="false" />
+            <element signature="e#6042#6043#0" expanded="false" />
+            <element signature="e#6610#7392#0" expanded="false" />
+            <element signature="e#7391#7392#0" expanded="false" />
+            <element signature="e#7816#7817#0" expanded="false" />
+            <element signature="e#7844#7845#0" expanded="false" />
             <marker date="1487486817000" expanded="true" signature="2441:2478" ph="select 8 fro... osf_commentsWHERE" />
             <marker date="1487486817000" expanded="true" signature="2987:3057" ph="select comme... " />
             <marker date="1487486817000" expanded="true" signature="3666:3796" ph="select * fro... osf_comments" />
@@ -1027,27 +987,27 @@
         <state relative-caret-position="2348">
           <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1387#2633#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#3103#3908#0" expanded="true" />
-            <element signature="e#3907#3908#0" expanded="true" />
-            <element signature="e#4184#4200#0" expanded="true" />
-            <element signature="e#4302#5665#0" expanded="true" />
-            <element signature="e#5664#5665#0" expanded="true" />
-            <element signature="e#5919#5935#0" expanded="true" />
-            <element signature="e#6386#6551#0" expanded="true" />
-            <element signature="e#6550#6551#0" expanded="true" />
-            <element signature="e#7937#8102#0" expanded="true" />
-            <element signature="e#8101#8102#0" expanded="true" />
-            <element signature="e#8562#8763#0" expanded="true" />
-            <element signature="e#8762#8763#0" expanded="true" />
-            <element signature="e#9348#9694#0" expanded="true" />
-            <element signature="e#9693#9694#0" expanded="true" />
-            <element signature="e#9696#10001#0" expanded="true" />
-            <element signature="e#10000#10001#0" expanded="true" />
-            <element signature="e#10193#10372#0" expanded="true" />
-            <element signature="e#10371#10372#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1387#2633#0" expanded="false" />
+            <element signature="e#2632#2633#0" expanded="false" />
+            <element signature="e#3103#3908#0" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#4184#4200#0" expanded="false" />
+            <element signature="e#4302#5665#0" expanded="false" />
+            <element signature="e#5664#5665#0" expanded="false" />
+            <element signature="e#5919#5935#0" expanded="false" />
+            <element signature="e#6386#6551#0" expanded="false" />
+            <element signature="e#6550#6551#0" expanded="false" />
+            <element signature="e#7937#8102#0" expanded="false" />
+            <element signature="e#8101#8102#0" expanded="false" />
+            <element signature="e#8562#8763#0" expanded="false" />
+            <element signature="e#8762#8763#0" expanded="false" />
+            <element signature="e#9348#9694#0" expanded="false" />
+            <element signature="e#9693#9694#0" expanded="false" />
+            <element signature="e#9696#10001#0" expanded="false" />
+            <element signature="e#10000#10001#0" expanded="false" />
+            <element signature="e#10193#10372#0" expanded="false" />
+            <element signature="e#10371#10372#0" expanded="false" />
             <marker date="1487489914000" expanded="true" signature="1228:1300" ph="insert into osf_events... " />
             <marker date="1487489914000" expanded="true" signature="2776:3016" ph="insert into osf_events... " />
             <marker date="1487489914000" expanded="true" signature="4064:4127" ph="select * fro... osf_events" />
@@ -1217,31 +1177,31 @@
         <state relative-caret-position="896">
           <caret line="202" column="33" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2487#3103#0" expanded="true" />
-            <element signature="e#3102#3103#0" expanded="true" />
-            <element signature="e#3603#4111#0" expanded="true" />
-            <element signature="e#4110#4111#0" expanded="true" />
-            <element signature="e#4474#4852#0" expanded="true" />
-            <element signature="e#4851#4852#0" expanded="true" />
-            <element signature="e#5088#5472#0" expanded="true" />
-            <element signature="e#5471#5472#0" expanded="true" />
-            <element signature="e#6220#6815#0" expanded="true" />
-            <element signature="e#6814#6815#0" expanded="true" />
-            <element signature="e#7072#7615#0" expanded="true" />
-            <element signature="e#7614#7615#0" expanded="true" />
-            <element signature="e#7707#7708#0" expanded="true" />
-            <element signature="e#7775#7776#0" expanded="true" />
-            <element signature="e#7833#7834#0" expanded="true" />
-            <element signature="e#7900#7901#0" expanded="true" />
-            <element signature="e#8231#8249#0" expanded="true" />
-            <element signature="e#8495#8511#0" expanded="true" />
-            <element signature="e#8665#8973#0" expanded="true" />
-            <element signature="e#8972#8973#0" expanded="true" />
-            <element signature="e#9053#9054#0" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9217#9218#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2487#3103#0" expanded="false" />
+            <element signature="e#3102#3103#0" expanded="false" />
+            <element signature="e#3603#4111#0" expanded="false" />
+            <element signature="e#4110#4111#0" expanded="false" />
+            <element signature="e#4474#4852#0" expanded="false" />
+            <element signature="e#4851#4852#0" expanded="false" />
+            <element signature="e#5088#5472#0" expanded="false" />
+            <element signature="e#5471#5472#0" expanded="false" />
+            <element signature="e#6220#6815#0" expanded="false" />
+            <element signature="e#6814#6815#0" expanded="false" />
+            <element signature="e#7072#7615#0" expanded="false" />
+            <element signature="e#7614#7615#0" expanded="false" />
+            <element signature="e#7707#7708#0" expanded="false" />
+            <element signature="e#7775#7776#0" expanded="false" />
+            <element signature="e#7833#7834#0" expanded="false" />
+            <element signature="e#7900#7901#0" expanded="false" />
+            <element signature="e#8231#8249#0" expanded="false" />
+            <element signature="e#8495#8511#0" expanded="false" />
+            <element signature="e#8665#8973#0" expanded="false" />
+            <element signature="e#8972#8973#0" expanded="false" />
+            <element signature="e#9053#9054#0" expanded="false" />
+            <element signature="e#9109#9110#0" expanded="false" />
+            <element signature="e#9160#9161#0" expanded="false" />
+            <element signature="e#9217#9218#0" expanded="false" />
             <marker date="1487547231000" expanded="true" signature="2210:2398" ph="insert into osf_followings... " />
             <marker date="1487547231000" expanded="true" signature="3344:3515" ph="insert into osf_followers... " />
             <marker date="1487547231000" expanded="true" signature="4356:4428" ph="delete from " />
@@ -1258,20 +1218,20 @@
         <state relative-caret-position="173">
           <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1292#1631#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1830#2176#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2399#2585#0" expanded="true" />
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#2827#3126#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3521#3539#0" expanded="true" />
-            <element signature="e#3753#3769#0" expanded="true" />
-            <element signature="e#3908#4225#0" expanded="true" />
-            <element signature="e#4530#4920#0" expanded="true" />
-            <element signature="e#4919#4920#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1292#1631#0" expanded="false" />
+            <element signature="e#1630#1631#0" expanded="false" />
+            <element signature="e#1830#2176#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
+            <element signature="e#2399#2585#0" expanded="false" />
+            <element signature="e#2584#2585#0" expanded="false" />
+            <element signature="e#2827#3126#0" expanded="false" />
+            <element signature="e#3125#3126#0" expanded="false" />
+            <element signature="e#3521#3539#0" expanded="false" />
+            <element signature="e#3753#3769#0" expanded="false" />
+            <element signature="e#3908#4225#0" expanded="false" />
+            <element signature="e#4530#4920#0" expanded="false" />
+            <element signature="e#4919#4920#0" expanded="false" />
             <marker date="1487550611000" expanded="true" signature="1210:1261" ph="insert into missingValue... " />
             <marker date="1487550611000" expanded="true" signature="1736:1799" ph="delete from " />
             <marker date="1487550611000" expanded="true" signature="2269:2320" ph="select * fro... missingValue" />
@@ -1289,16 +1249,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1487551229000" expanded="true" signature="1696:1765" ph="select user_... osf_likes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1361,27 +1311,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/RelationDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#1382#1773#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2434#2435#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+            <element signature="e#2529#2530#0" expanded="true" />
+            <element signature="e#2707#2994#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
+            <element signature="e#2996#3344#0" expanded="true" />
+            <element signature="e#3343#3344#0" expanded="true" />
+            <element signature="e#3553#3569#0" expanded="true" />
+            <element signature="e#3669#4185#0" expanded="true" />
+            <element signature="e#4184#4185#0" expanded="true" />
+            <marker date="1487600338000" expanded="true" signature="1225:1295" ph="insert into osf_relations... " />
+            <marker date="1487600338000" expanded="true" signature="1949:2019" ph="insert into osf_relations... " />
+            <marker date="1487600338000" expanded="true" signature="2610:2670" ph="select * fro... osf_relations" />
+            <marker date="1487600338000" expanded="true" signature="3446:3496" ph="select * fro... osf_relations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/ShortPostDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#579#921#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <marker date="1487632911000" expanded="true" signature="429:514" ph="select count... osf_posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/TagDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1383#1774#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#2382#2383#0" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2502#2503#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2708#2995#0" expanded="true" />
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#2997#3345#0" expanded="true" />
-            <element signature="e#3344#3345#0" expanded="true" />
-            <element signature="e#3554#3570#0" expanded="true" />
-            <element signature="e#3670#4186#0" expanded="true" />
-            <element signature="e#4185#4186#0" expanded="true" />
-            <marker date="1487600314000" expanded="true" signature="1226:1296" ph="insert into osf_relations... " />
-            <marker date="1487600314000" expanded="true" signature="1950:2020" ph="insert into osf_relations... " />
-            <marker date="1487600314000" expanded="true" signature="2611:2671" ph="select * fro... osf_relations" />
-            <marker date="1487600314000" expanded="true" signature="3447:3497" ph="select * fro... osf_relations" />
+            <element signature="e#1764#2082#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2335#2816#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2972#3271#0" expanded="true" />
+            <element signature="e#3270#3271#0" expanded="true" />
+            <element signature="e#3273#3569#0" expanded="true" />
+            <element signature="e#3568#3569#0" expanded="true" />
+            <element signature="e#3785#3801#0" expanded="true" />
+            <element signature="e#3905#4293#0" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
+            <element signature="e#4499#4890#0" expanded="true" />
+            <element signature="e#4889#4890#0" expanded="true" />
+            <marker date="1487635730000" expanded="true" signature="1640:1677" ph="insert into osf_tags... " />
+            <marker date="1487635730000" expanded="true" signature="2241:2275" ph="select * fro... osf_tags" />
+            <marker date="1487635730000" expanded="true" signature="2898:2935" ph="select id fr... osf_tags" />
+            <marker date="1487635730000" expanded="true" signature="3687:3729" ph="select * fro... osf_tags" />
+            <marker date="1487635730000" expanded="true" signature="4398:4457" ph="select * fro... osf_tags" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/impl/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="301" column="77" selection-start-line="301" selection-start-column="77" selection-end-line="301" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2469#2801#0" expanded="true" />
+            <element signature="e#2800#2801#0" expanded="true" />
+            <element signature="e#3232#3865#0" expanded="true" />
+            <element signature="e#3864#3865#0" expanded="true" />
+            <element signature="e#4175#4191#0" expanded="true" />
+            <element signature="e#4287#5066#0" expanded="true" />
+            <element signature="e#5065#5066#0" expanded="true" />
+            <element signature="e#5240#5883#0" expanded="true" />
+            <element signature="e#5882#5883#0" expanded="true" />
+            <element signature="e#6176#7098#0" expanded="true" />
+            <element signature="e#7097#7098#0" expanded="true" />
+            <element signature="e#7482#8084#0" expanded="true" />
+            <element signature="e#8083#8084#0" expanded="true" />
+            <element signature="e#8356#8765#0" expanded="true" />
+            <element signature="e#8764#8765#0" expanded="true" />
+            <element signature="e#9164#9489#0" expanded="true" />
+            <element signature="e#9488#9489#0" expanded="true" />
+            <element signature="e#9716#10058#0" expanded="true" />
+            <element signature="e#10057#10058#0" expanded="true" />
+            <element signature="e#10288#10678#0" expanded="true" />
+            <element signature="e#10677#10678#0" expanded="true" />
+            <element signature="e#11153#11477#0" expanded="true" />
+            <element signature="e#11476#11477#0" expanded="true" />
+            <element signature="e#12085#12086#0" expanded="true" />
+            <element signature="e#12375#12720#0" expanded="true" />
+            <element signature="e#12719#12720#0" expanded="true" />
+            <marker date="1487638675000" expanded="true" signature="2353:2406" ph="select user_... osf_users" />
+            <marker date="1487638675000" expanded="true" signature="4073:4118" ph="select * fro... osf_users" />
+            <marker date="1487638675000" expanded="true" signature="5142:5177" ph="select * fro... osf_users" />
+            <marker date="1487638675000" expanded="true" signature="7197:7358" ph="insert into osf_users... " />
+            <marker date="1487638675000" expanded="true" signature="8227:8318" ph="update osf_u... " />
+            <marker date="1487638675000" expanded="true" signature="8833:8868" ph="delete from " />
+            <marker date="1487638675000" expanded="true" signature="9077:9133" ph="update osf_u... " />
+            <marker date="1487638675000" expanded="true" signature="9636:9685" ph="update osf_u... " />
+            <marker date="1487638675000" expanded="true" signature="10197:10257" ph="update osf_u... " />
+            <marker date="1487638675000" expanded="true" signature="11033:11090" ph="select reset... osf_users" />
+            <marker date="1487638675000" expanded="true" signature="11670:11728" ph="update osf_u... " />
+            <marker date="1487638675000" expanded="true" signature="12289:12344" ph="update osf_u... " />
           </folding>
         </state>
       </provider>
