@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6296d467-5b59-4c81-828f-cb55815994e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/HomePage.java" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/HomePage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/AlbumController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/CommentController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/ExploreController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/FollowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sns-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,18 +29,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/HomePage.java">
+      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="473">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4975#4991#0" expanded="true" />
-                <element signature="e#5946#5947#0" expanded="true" />
-                <element signature="e#5992#5993#0" expanded="true" />
-                <element signature="e#6058#6059#0" expanded="true" />
-                <element signature="e#6104#6105#0" expanded="true" />
+                <element signature="e#1441#1457#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlbumController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/AlbumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,10 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Album.java" />
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/AlbumDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/CommentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/EventDAO.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/FeedDAO.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/FollowDAO.java" />
@@ -119,6 +127,10 @@
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/NotifyController.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/LikeController.java" />
         <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/FollowController.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/ExploreController.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/AlbumController.java" />
       </list>
     </option>
   </component>
@@ -136,8 +148,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="447" />
-    <option name="y" value="63" />
+    <option name="x" value="286" />
+    <option name="y" value="22" />
     <option name="width" value="1146" />
     <option name="height" value="737" />
   </component>
@@ -735,16 +747,16 @@
       <workItem from="1487413921025" duration="26934000" />
       <workItem from="1487594572115" duration="9739000" />
       <workItem from="1487663118703" duration="5885000" />
-      <workItem from="1487748298178" duration="4583000" />
+      <workItem from="1487748298178" duration="7402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47141000" />
+    <option name="totallyTimeSpent" value="49960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="447" y="63" width="1146" height="737" extended-state="0" />
-    <editor active="true" />
+    <frame x="286" y="22" width="1146" height="737" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -759,7 +771,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4873016" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4873016" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5126984" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -792,48 +804,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/RelationDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/TagDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.2.8.RELEASE/spring-jdbc-3.2.8.RELEASE.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/qiniu/qiniu-java-sdk/7.0.0/qiniu-java-sdk-7.0.0.jar!/com/qiniu/storage/UploadManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/qiniu/qiniu-java-sdk/7.0.0/qiniu-java-sdk-7.0.0.jar!/com/qiniu/storage/BucketManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.2.8.RELEASE/spring-jdbc-3.2.8.RELEASE.jar!/org/springframework/jdbc/core/ResultSetExtractor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -974,13 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="167" column="70" selection-start-line="167" selection-start-column="70" selection-end-line="167" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/NotificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="52" column="77" selection-start-line="52" selection-start-column="77" selection-end-line="52" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -1294,6 +1257,75 @@
             <element signature="e#5992#5993#0" expanded="true" />
             <element signature="e#6058#6059#0" expanded="true" />
             <element signature="e#6104#6105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/model/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/service/NotificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/FollowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/ExploreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2062#2081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.8.RELEASE/spring-web-3.2.8.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1441#1457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main/java/com/lcc/osf/controller/AlbumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
