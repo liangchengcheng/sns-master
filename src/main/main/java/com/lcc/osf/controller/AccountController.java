@@ -130,7 +130,6 @@ public class AccountController {
         return map;
     }
 
-
     @ResponseBody
     @RequestMapping(value="/send_resetpwd_email")
     public Map<String, Object> sendResetPwdEmail(HttpSession session){
@@ -140,8 +139,6 @@ public class AccountController {
         map.put("status", Property.SUCCESS_EMAIL_RESETPWD_SEND);
         return map;
     }
-
-
 
     @ResponseBody
     @RequestMapping(value="/login", method=RequestMethod.POST)
@@ -213,9 +210,7 @@ public class AccountController {
     }
 
     @RequestMapping("/activation/{key}")
-    public ModelAndView activation(@PathVariable("key") String key,
-                                   @RequestParam("email") String email,
-                                   HttpSession session) {
+    public ModelAndView activation(@PathVariable("key") String key, @RequestParam("email") String email, HttpSession session) {
         ModelAndView mav = new ModelAndView();
         String status = null;
         try {
