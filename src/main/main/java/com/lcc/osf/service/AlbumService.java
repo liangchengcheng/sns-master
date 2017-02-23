@@ -243,7 +243,6 @@ public class AlbumService {
         String classpath = AlbumService.class.getClassLoader().getResource("").getPath();
         try {
             File ori_img = new File(classpath+"/tmp/"+key);
-
             BufferedImage croped_img = Thumbnails.of(ImageIO.read(ori_img))
                     .sourceRegion(x, y, width, height)
                     .size(200, 200).asBufferedImage();
@@ -253,7 +252,6 @@ public class AlbumService {
             ImageIO.write(croped_img, img_type, bos);
 
             albumDao.delPhotoInBucket(key);
-
             String new_key = UUID.randomUUID().toString()+"."+img_type;
             if( albumDao.uploadPhoto(bos.toByteArray(), new_key) != null ){
                 if(ori_img.exists()){
