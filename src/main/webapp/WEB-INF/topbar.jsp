@@ -54,9 +54,13 @@
                         </div>
                     </li>
                 </c:if>
+                <c:if test="${empty sessionScope.user}">
+                    <li><a href='<c:url value="/account/register"></c:url>'>注册</a></li>
+                    <li></li>
+                    <li><a href='<c:url value="/account/login"></c:url>'>登录</a></li>
+                </c:if>
             </ul>
         </div>
-
     </div>
 </nav>
 <html>

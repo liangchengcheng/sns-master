@@ -1,15 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lcc
-  Date: 2017/2/24
-  Time: 上午7:10
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>404</title>
+    <meta charset="UTF-8">
+    <title>500</title>
     <link rel="shortcut icon" href="<%=request.getContextPath() %>/img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/bootstrap2.css">
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/navbar.css">
@@ -22,17 +19,16 @@
     </style>
 </head>
 <body>
-
 <%@ include file="topbar.jsp" %>
 
 <div class="container">
     <div class="row">
         <div class="span9 offset1">
             <div class="error page img">
-                <img src="<c:url value="/img/404.jpg" />" alt="" />
+                <img src="<c:url value="/img/500.png" />" alt="" />
             </div>
             <div class="error page code">
-                404
+                500
             </div>
         </div>
     </div>
