@@ -16,6 +16,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 import java.sql.Connection;
@@ -30,6 +31,7 @@ import java.util.Map;
 /**
  * Created by lcc on 2017/2/20.
  */
+@Repository("notificationDao")
 public class NotificationDAOImpl implements NotificationDAO{
 
     private static final String TABLE = "osf_notifications";
