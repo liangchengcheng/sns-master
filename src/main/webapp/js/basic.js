@@ -15,5 +15,4 @@ var osf = {
         post_cover_style : '@!postcover',
         album_thumbnail : '@!albumthumbnail'
     }
-
 };

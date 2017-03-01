@@ -69,7 +69,6 @@ jQuery.extend({
                         io.contentWindow.document.body.innerHTML : null;
                     xml.responseXML = io.contentWindow.document.XMLDocument ?
                         io.contentWindow.document.XMLDocument : io.contentWindow.document;
-
                 } else if (io.contentDocument) {
                     xml.responseText = io.contentDocument.document.body ?
                         io.contentDocument.document.body.innerHTML : null;
@@ -104,15 +103,12 @@ jQuery.extend({
                 // The request was completed
                 if (s.global)
                     jQuery.event.trigger("ajaxComplete", [xml, s]);
-
                 // Handle the global AJAX counter
                 if (s.global && !--jQuery.active)
                     jQuery.event.trigger("ajaxStop");
-
                 // Process result
                 if (s.complete)
                     s.complete(xml, status);
-
                 jQuery(io).unbind();
 
                 setTimeout(function () {
@@ -141,8 +137,7 @@ jQuery.extend({
             jQuery(form).attr('target', frameId);
             if (form.encoding) {
                 jQuery(form).attr('encoding', 'multipart/form-data');
-            }
-            else {
+            } else {
                 jQuery(form).attr('enctype', 'multipart/form-data');
             }
             jQuery(form).submit();
@@ -155,7 +150,6 @@ jQuery.extend({
             abort: function () {
             }
         };
-
     },
 
     uploadHttpData: function (r, type) {
