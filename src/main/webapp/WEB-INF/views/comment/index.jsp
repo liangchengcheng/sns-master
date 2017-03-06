@@ -16,7 +16,7 @@
             </a>
 
             <div class="content">
-                
+
                 <c:if test="${comment.comment_parent == 0 }">
                     <a class="author"
                        href="<c:url value="/user/${comment.comment_author }" />">${comment.comment_author_name }</a>

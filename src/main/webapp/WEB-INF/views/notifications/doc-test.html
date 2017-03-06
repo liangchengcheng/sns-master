@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .siblings *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    
+    <script src="../../../js/jquery-1.11.1.min.js">
+        $(document).ready(function () {
+            $("h2").siblings().css({"color":"red","border":"2px solid red"})
+        });
+    </script>
+</head>
+<body class="siblings">
+    <div> div父
+        <span>
+            span 行元素
+        </span>
+        <h2>👌h2 </h2>
+        <h3> h3 </h3>
+        <p>
+            p元素
+        </p>
+    </div>
+</body>
+</html>
