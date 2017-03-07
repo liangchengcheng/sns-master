@@ -177,9 +177,9 @@ public class AlbumController {
         }
         return album;
     }
+
     /*
 	 * 创建相册
-	 *
 	 */
     @ResponseBody
     @RequestMapping(value="/create", method=RequestMethod.POST)
