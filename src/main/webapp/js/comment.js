@@ -21,9 +21,7 @@ $(document).ready(function () {
         var header = $('<div id="header"><img  class="ui avatar image" src="' + avatarRef + '"><span>' + commentContentRef + '</span></div>');
         $('#replyarea').prepend($(header));
         $('#replycontent').focus();
-
     });
-
 
     $('#replybtn').live('click', function () {
         var isLogin = $('meta[name=isLogin]').attr('content');
@@ -36,8 +34,7 @@ $(document).ready(function () {
 
         if (commentType == 0) {
             header = '<a class="author">me</a>';
-        }
-        else if (commentType == 1) {
+        } else if (commentType == 1) {
             //var replyTo = $(this).attr('replyTo');
             header = '<a class="author">me</a> 回复 ' + '<a class="author">' + replyTo + '</a>';
         }
@@ -76,7 +73,7 @@ $(document).ready(function () {
                     '<img src="' + img_base_url + data.avatar + '?imageView2/1/w/48/h/48">' +
                     '</a>' +
                     '<div class="content">' +
-                    header +
+                     header +
                     '<div class="metadata">' +
                     '<span class="date">刚刚</span>' +
                     '</div>' +
@@ -91,11 +88,9 @@ $(document).ready(function () {
                 $('#replycontent').focus();
                 commentType = 0;
                 commentParent = 0;
-            })
-            .fail(function () {
+            }).fail(function () {
                 console.log("error");
-            })
-            .always(function () {
+            }).always(function () {
                 console.log("complete");
             });
     });
