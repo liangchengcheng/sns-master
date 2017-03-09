@@ -39,6 +39,7 @@
 </div>
 <div id="welcome">
 
+    <!--页面1-->
     <div class="section section1">
         <div class="container">
             <div class="row">
@@ -78,6 +79,8 @@
             <img src="<%=request.getContextPath() %>/img/pulldown_tip.png" alt="向下滑动">
         </div>
     </div>
+
+    <!--页面2-->
     <div class="section section2">
         <div class="container">
             <div class="row">
@@ -111,6 +114,7 @@
         </div>
         <!-- end tags -->
     </div>
+    <!--页面3-->
     <div class="section section3">
         <div class="container">
             <div class="row">
@@ -170,6 +174,7 @@
         </div>
 
     </div>
+    <!--页面4-->
     <!-- end section3 -->
     <div class="section section4">
         <div class="container">
