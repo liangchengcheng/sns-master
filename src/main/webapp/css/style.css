@@ -1,0 +1,17 @@
+
+/**
+	error page style(404  500 的错误页面)
+**/
+.error.page.img{
+    display: inline;
+}
+.error.page.img img{
+    width: 160px;
+    margin-bottom: 172px;
+}
+.error.page.code{
+    display: inline-block;
+    font-size: 300px;
+    font-weight: 600;
+    color: #B5B5B5;
+}

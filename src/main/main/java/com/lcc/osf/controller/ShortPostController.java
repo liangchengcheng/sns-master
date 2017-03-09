@@ -34,11 +34,11 @@ public class ShortPostController {
     private EventService eventService;
 
     @Autowired
-    @Qualifier("feefService")
+    @Qualifier("feedService")
     private FeedService feedService;
 
     @Autowired
-    @Qualifier("suerService")
+    @Qualifier("userService")
     private UserService userService;
 
     @ResponseBody
