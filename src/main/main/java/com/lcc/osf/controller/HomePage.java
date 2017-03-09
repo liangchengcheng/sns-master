@@ -51,7 +51,7 @@ public class HomePage {
     /**
      * 显示主界面
      */
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public ModelAndView showHomePage(HttpSession session) {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
@@ -106,9 +106,9 @@ public class HomePage {
         }
 
         mav.setViewName("welcome");
-        List<Tag> tags_recommend = tagService.getRecommendTags(0);
-        mav.addObject("tags", tags_recommend);
-        mav.addObject("dic", new Dic());
+        //List<Tag> tags_recommend = tagService.getRecommendTags(0);
+        //mav.addObject("tags", tags_recommend);
+        //mav.addObject("dic", new Dic());
         return mav;
     }
 

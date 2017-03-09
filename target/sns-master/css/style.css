@@ -1,3 +1,171 @@
+body{
+    font-family: "Helvetica" ,"Arial","Times New Roman";
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 90px;
+}
+
+.postheader{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.header{
+    padding-top: 0;
+    margin-top: 0;
+}
+.postmeta{
+    margin: 15px 0 0;
+}
+.postmeta  .avatar {
+    float:left;
+}
+.postmeta .author {
+    float:left;
+    padding-top:7px;
+    margin-left:7px;
+}
+.postmeta .tags {
+    float: right;
+}
+
+#tags {
+    padding-left: 20px;
+}
+.ui.images img {
+    width:23.5%;
+}
+.albumheader {
+    margin-top:50px;
+}
+#rightside {
+    padding-left:45px;
+}
+#rightside .ui.vertical.menu{
+    width:100%;
+    border: none;
+    box-shadow:none;
+}
+#rightside .ui.vertical.menu .item{
+    width:100%;
+    padding: 0;
+}
+
+#rightside .item .right{
+    float: right;
+    padding-top: 10px;
+}
+
+#rightside .item .avatar{
+    float: left;
+}
+
+#rightside .item .content{
+    height: 36px;
+    padding: 10px;
+}
+
+#rightside .item .content .header{
+    font-size: 16px;
+    color:black;
+    cursor: pointer;
+}
+
+#rightside .poptags .tagitem{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.tagitem .mask{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background-color: black;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+}
+
+.tagitem .tag{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    color:white;
+    font-size: 20px;
+}
+
+.ui.feed > .event {
+    margin-bottom: 10px;
+}
+
+.ui.feed > .event  .comments-attach {
+    display: none;
+}
+
+.comments-attach a{
+    font-weight: bold;
+    color: #009fda;
+}
+
+.comments-attach .cancle{
+    margin-left: 10px;
+}
+.ui.feed > .event > .content .extra.images img{
+    width: 32%;
+}
+
+.ui.feed > .event > .label{
+    width: 52px;
+    height: 52px;
+}
+
+.ui.feed >.event.empty{
+    display: none;
+}
+
+
+/**
+    modal的的模式
+**/
+
+
+
+/**
+	img upload page style
+**/
+
+#uploadedphotos{
+}
+
+#saveAlbumBtn, #uploadarea{
+    margin-top: 20px;
+}
+
+/**
+trash-tip style
+**/
+.ui.basic.small.modal.trash-tip,
+.ui.basic.small.modal.cancel-tip{
+    text-align: center;
+}
+.ui.basic.small.modal.trash-tip.actions,
+.ui.basic.small.modal.cancel-tip .actions{
+    text-align: center;
+}
 
 /**
 	error page style(404  500 的错误页面)
