@@ -61,10 +61,10 @@ public class HomePage {
             return new ModelAndView("redirect:/welcome");
         }
 
-        mav.addObject("counter", userService.getCounterOfFollowAndShortPost(user.getId()));
-        List<Event> feeds = feedService.getFeeds(user.getId());
-        mav.addObject("feeds", feeds);
-        mav.addObject("dic", new Dic());
+        //mav.addObject("counter", userService.getCounterOfFollowAndShortPost(user.getId()));
+        //List<Event> feeds = feedService.getFeeds(user.getId());
+        //mav.addObject("feeds", feeds);
+        //mav.addObject("dic", new Dic());
         return mav;
     }
 

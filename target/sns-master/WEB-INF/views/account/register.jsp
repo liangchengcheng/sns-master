@@ -30,11 +30,11 @@
                         <div class="ui form">
                             <div class="field">
                                 <label>邮箱<span id="emailTip" class="tip"></span></label>
-                                <input type="text" name="email" id="email">
+                                <input type="text" name="email" id="email" placeholder="输入邮箱">
                             </div>
                             <div class="field">
                                 <label>用户名<span id="usernameTip" class="tip"></span></label>
-                                <input type="text" name="username" id="username">
+                                <input type="text" name="username" id="username" placeholder="输入用户名">
                             </div>
                             <div class="field">
                                 <label>密码<span id="passwordTip" class="tip"></span></label>
@@ -42,9 +42,8 @@
                             </div>
                             <div class="field">
                                 <label>确认密码<span id="cfmPwdTip" class="tip"></span></label>
-                                <input type="password" name="cfmPwd" id="cfmPwd">
+                                <input type="password" name="cfmPwd" id="cfmPwd" placeholder="再次输入密码">
                             </div>
-
                             <div class="field">
                                 <div class="ui blue button" id="registerBtn">注册</div>
                             </div>
@@ -52,10 +51,7 @@
 
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </div>
